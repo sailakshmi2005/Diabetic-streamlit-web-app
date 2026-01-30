@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 
 # Load the model
-loaded_model = pickle.load(open(r"C:/Users/Admin/Downloads/python.py/.vscode/ipython.py/Diabetes_prediction/Diabetic_model.sav",'rb'))
+loaded_model = pickle.load(open("Diabetic_model.sav",'rb'))
 
 def Diabetic_system(input_data):
 
