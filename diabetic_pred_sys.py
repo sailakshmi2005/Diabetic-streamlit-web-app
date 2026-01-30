@@ -1,9 +1,12 @@
 import numpy as np
 import streamlit as st
 import pickle
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "Diabetic_model.sav")
 # Load the model
-loaded_model = pickle.load(open("Diabetic_model.sav",'rb'))
+loaded_model = pickle.load(open("MODEL_PATH","rb"))
 
 def Diabetic_system(input_data):
 
